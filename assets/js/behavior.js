@@ -49,11 +49,11 @@ gsap.timeline()
     { 'stroke-dashoffset': '1300px' },
     { 'stroke-dashoffset': '0', duration: 2.5 }, '-=0.2')
   .to('.outer_frame',
-    { opacity: 0, duration: .5, ease: 'power1.inOut' }, 2.5)
+    { opacity: 0, duration: .5, ease: 'power1.inOut' }, '-=1.5')
   .to('.logo_svg',
-    { opacity: 0, duration: .5, ease: 'power1.inOut' }, 2.5)
+    { opacity: 0, duration: .5, ease: 'power1.inOut' }, '<')
   .to('.org_logo',
-    { opacity: 1, duration: 1, ease: 'power1.inOut'}, 3.5)
+    { opacity: 1, duration: .5, ease: 'power1.inOut'}, '<')
 
 
 // ////////////////////////////////////////////////
@@ -125,6 +125,7 @@ gsap.to('#anchor-special', {
     markers: true
   }
 })
+
 // // 任意の位置でくっつく処理
 ScrollTrigger.create({
   trigger: '#anchor-special',
